@@ -17,3 +17,21 @@ else {
 
   console.log("Dado inválido");
 }
+
+
+//Exercício 2
+function impromePesoIdeal(peso) {
+  alert ("peso ideal: " + peso.toFixed(2));
+}
+
+function main () {
+  let peso = parseFloat(prompt("Informe seu peso"));
+  let altura = parseFloat(prompt("Informe sua altura"));
+  let sexo = prompt("Informe seu sexo" (M/F));
+
+  peso = calculaPeso(peso, altura, sexo.
+  toUpperCase())
+  imprimindoPesoIdeal(peso);
+}
+
+main();
