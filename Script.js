@@ -67,4 +67,70 @@ function soma(number1, number2) {
   
   let resultadoSubtracao = subtracao(numero1, numero2);
   console.log("A subtração dos números é: " + resultadoSubtracao);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Saldo inicial
+let saldo = 0;
+
+// Função para realizar um depósito
+function depositar(valor) {
+  saldo += valor;
+  console.log("Depósito de R$" + valor + " realizado.");
+}
+
+// Função para realizar um saque
+function sacar(valor) {
+  if (valor <= saldo) {
+    saldo -= valor;
+    console.log("Saque de R$" + valor + " realizado.");
+  } else {
+    console.log("Saldo insuficiente para saque.");
+  }
+}
+
+// Função para consultar o saldo
+function consultarSaldo() {
+  console.log("Seu saldo é de R$" + saldo);
+}
+
+// Exemplo de uso das funções
+depositar(100);
+consultarSaldo();
+
+sacar(50);
+consultarSaldo();
+
+sacar(100);
+consultarSaldo();
+
   
