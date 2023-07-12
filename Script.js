@@ -67,3 +67,38 @@ function soma(number1, number2) {
   
   let resultadoSubtracao = subtracao(numero1, numero2);
   console.log("A subtração dos números é: " + resultadoSubtracao);
+
+
+
+
+// aulva 12/07
+function criarPessoa (pessoa) {
+    const contrainer = document.getelementById("container");vf
+
+    nome.textContent = cep.name;
+    nome.textContent = pessoa.url;
+    container.appendClild(nome);
+    container.appendClild(url);
+
+    // "cep": "60130240",
+    // "tipoCep": "logradouro",
+    // "subTipoCep": "S",
+    // "uf": "CE",
+    // "cidade": "Fortaleza",
+    // "bairro": "São João do Tauape",
+    // "endereco": "Avenida Pontes Vieira",
+    // "complemento": "De 2 Até 1550 Lado Par",
+    // "codigoIBGE": ""
+}
+
+fetch("https://api.adviceslip.com/advice")
+  .then(response => response.json())
+  .then(cep => {
+   
+    const cidade = cep 
+    console.log(cep);
+  })
+  .catch(error => {
+    
+    console.error("Algo de errado não está certo", error);
+  });
